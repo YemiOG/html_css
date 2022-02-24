@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Basic Language of the Web: HTML</title>
@@ -16,7 +17,7 @@
     <h6>The Basic Language of the Web: HTML</h6>
     -->
 
-    <header>
+    <header class="main-header">
       <h1>The Code Magazine</h1>
       <nav>
         <a href="blog.html">Blog</a>
@@ -69,7 +70,9 @@
       </ol>
       <p>
         You can learn more at
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
           >MDN Web Docs</a
         >
       </p>
@@ -92,7 +95,7 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="/src/img/related-1.jpg"
@@ -100,21 +103,21 @@
             width="75"
             height="75"
           /><a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img src="src/img/related-2.jpg" width="75" height="75" alt="" />
-          <a href="#">Powers of CSS</a>
-          <p>By Adams Rilwan</p>
+          <a href="#">The Unknown Powers of CSS</a>
+          <p class="related-author">By Adams Rilwan</p>
         </li>
         <li>
           <img src="src/img/related-3.jpg" height="75" width="75" alt="" />
           <a href="#">Introduction to JavaScript</a>
-          <p>By JavaScript Awesome</p>
+          <p class="related-author">By JavaScript Awesome</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2022 by The Code Magazine</footer>
+    <footer id="copyright">Copyright &copy; 2022 by The Code Magazine</footer>
   </body>
 </html>
