@@ -35,6 +35,7 @@ p {
 
 li {
   font-size: 22px;
+  margin-bottom: 10px;
 }
 #copyright {
   font-size: 14px;
@@ -53,6 +54,7 @@ aside {
 }
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px 40px;
 }
 li:first-child {
   font-weight: bold;
