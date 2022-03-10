@@ -12,6 +12,7 @@ body {
   width: 825px;
   border: 4px solid black;
   margin: 50px auto;
+  position: relative;
 }
 .product-title {
   text-align: center;
@@ -78,4 +79,38 @@ li {
 }
 ul {
   list-style: square;
+}
+h2::before {
+  content: "SALE";
+  color: #fff;
+  background-color: red;
+  letter-spacing: 2px;
+  font-size: medium;
+  display: inline-block;
+  padding: 7px 15px;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+}
+.color-blue {
+  background-color: blue;
+}
+.color-red {
+  background-color: red;
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-green {
+  background-color: green;
+}
+.color-brown {
+  background-color: brown;
 }
