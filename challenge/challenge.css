@@ -98,6 +98,7 @@ h2::before {
   height: 22px;
   width: 22px;
   display: inline-block;
+  margin-right: 10px;
 }
 .color-blue {
   background-color: blue;
