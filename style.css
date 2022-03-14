@@ -24,7 +24,7 @@ body {
   position: relative;
 }
 .container {
-  width: 800px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -41,8 +41,8 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
+  box-sizing: border-box;
 }
 nav {
   font-size: 18px;
@@ -72,6 +72,7 @@ h4 {
   text-transform: uppercase;
   text-align: center;
   color: black;
+  margin-bottom: 30px;
 }
 p {
   font-size: 22px;
@@ -99,6 +100,7 @@ li:last-child {
 }
 .related {
   list-style: none;
+  margin: 0px;
 }
 
 li:first-child {
@@ -189,4 +191,21 @@ h1 {
 }
 nav {
   float: right;
+  margin-left: 5px;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
 }
