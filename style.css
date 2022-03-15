@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -135,7 +136,7 @@ nav a:link {
   padding: 20px;
   display: block; */
   margin-right: 30px;
-  margin-top: 10px;
+
   display: inline-block;
 }
 .like {
@@ -176,7 +177,7 @@ h2::after {
 0-universal selector */
 
 /* FLOATS */
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -208,4 +209,35 @@ aside {
 }
 footer {
   clear: both;
+} */
+
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+}
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
 }
