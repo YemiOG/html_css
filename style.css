@@ -229,15 +229,31 @@ footer {
 .related-post {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .related-link:link {
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
+  margin-bottom: 5px;
+  display: block;
 }
 .related-author {
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
   font-style: italic;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+aside {
+  flex: 0 0 300px;
 }

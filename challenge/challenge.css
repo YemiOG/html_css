@@ -25,16 +25,12 @@ body {
 
 .price {
   font-size: 25px;
-  float: left;
 }
 .shipping {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
-  float: right;
-  margin-top: 8px;
 }
 
 .more-info:link,
@@ -98,12 +94,28 @@ h2::before {
   left: -38px;
 }
 
+img {
+  margin-right: 40px;
+}
+.product-desc {
+  margin-bottom: 10px;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
 .color {
   background-color: #000;
   height: 22px;
   width: 22px;
   display: inline-block;
-  margin-right: 10px;
+  justify-content: space-between;
 }
 .color-blue {
   background-color: blue;
@@ -120,22 +132,18 @@ h2::before {
 .color-brown {
   background-color: brown;
 }
-
-.details {
-  float: right;
-  width: 243px;
-}
-.product-desc {
-  clear: both;
-}
 .product-info {
-  width: 243px;
-  float: left;
-  margin-right: 40px;
+  flex: 1;
+
+  margin-top: 20px;
 }
-img {
-  float: left;
-  margin-right: 40px;
+.details {
+  flex: 1;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  gap: 40px;
 }
 .clearfix::after {
   content: "";
