@@ -40,8 +40,8 @@
         margin: 40px;
 
         /* CSS GRID */
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: none;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
         row-gap: 20px;
         column-gap: 40px;
@@ -52,7 +52,7 @@
       }
 
       .container--2 {
-        display: none;
+        display: grid;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -61,6 +61,14 @@
 
         width: 1000px;
         height: 600px;
+        grid-template-columns: 125px 250px 125px;
+        grid-template-rows: 250px 100px;
+
+        gap: 50px;
+        /* align tracks inside container distribute empty space */
+        justify-content: center;
+        /*  */
+        align-content: center;
 
         /* CSS GRID */
       }
