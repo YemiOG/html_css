@@ -212,7 +212,7 @@ footer {
 } */
 
 /* FLEXBOX */
-.main-header {
+/* .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -256,4 +256,21 @@ article {
 }
 aside {
   flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+}
+.main-header {
+  grid-column: 1 / span 2;
+}
+article {
+}
+aside {
+}
+footer {
+  grid-column: 1/-1;
 }
